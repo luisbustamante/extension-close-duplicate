@@ -1,0 +1,18 @@
+{
+  "name": "Close Duplicates",
+  "description": "It just closes all duplicate tabs on the chrome browser session",
+  "version": "1.0",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": [
+    "storage", 
+    "activeTab",
+    "scripting", 
+    "tabs"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
